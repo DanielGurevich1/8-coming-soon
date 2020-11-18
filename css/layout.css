@@ -2,9 +2,27 @@
 
     display: inline-block;
     width: 100%;
-    padding: var(--section-padding) 0;
+    padding: calc(var(--section-padding) * 2) 0;
 }
-    .container > row-short {
+    .container > .row-short {
         display: inline-block;
         width: 600px;
+        background-color: blueviolet;
+    }
+
+    .container > .row {
+        display: inline-block;
+        width: 100%;
+        background-color: cadetblue;
+    }
+    
+    .container > row > left.column {
+        display: inline-block;
+        width: 50%;
+        background-color: red;
+    }
+    .container > row > right.column {
+        display: inline-block;
+        width: 50%;
+        background-color: orange;
     }
