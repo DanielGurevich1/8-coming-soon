@@ -7,24 +7,33 @@
     .container > .row-short {
         display: inline-block;
         width: 600px;
-        background-color: blueviolet;
+        margin-left: calc(50% - 300px);
+        
     }
 
     .container > .row {
         display: inline-block;
-        width: 100%;
-        background-color: cadetblue;
-    }
+        width: 1000px;
+        margin-left: calc(50% - 500px);
     
-    .container > .row > .left.column {
-        display: inline-block;
-        width: 50%;
-        margin-left: calc(50%-500px);
-        background-color: red;
     }
-    .container > .row > .right.column {
-        display: inline-block;
-        width: 50%;
-        background-color: orange;
-    }
+
+        .container > .row > .column {
+            display: inline-block;
+            float: left;
+        }
+        
+            .container > .row > .left.column {
+                display: inline-block;
+                width: 50%;
+                margin-left: calc(50%-500px);
+                
+                float: left;
+            }
+            .container > .row > .right.column {
+                display: inline-block;
+                width: 50%;
+                
+                float: right;
+            }
 
