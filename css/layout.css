@@ -16,13 +16,15 @@
         background-color: cadetblue;
     }
     
-    .container > row > left.column {
+    .container > .row > .left.column {
         display: inline-block;
         width: 50%;
+        margin-left: calc(50%-500px);
         background-color: red;
     }
-    .container > row > right.column {
+    .container > .row > .right.column {
         display: inline-block;
         width: 50%;
         background-color: orange;
     }
+
