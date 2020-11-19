@@ -19,16 +19,19 @@ footer.container {
 
     .hero {
         text-align: center;
+        margin-bottom: var(--hero-space);
+
     }
 
     .hero img {
         height : 40px;
-    
+        margin-bottom: var((--hero-space) * 2);
     }
 
     .hero h1 {
         display: inline-block;
         width: 100%;
+        margin-bottom: var((--hero-space) * 2);
         text-transform: uppercase;
         font-size: 50px;
         color: black;
@@ -37,6 +40,7 @@ footer.container {
     .hero p {
         display: inline-block;
         width: 100%;
+        margin-bottom: var(--hero-space);
         font-size: 18px;
         color: #555;
     }
