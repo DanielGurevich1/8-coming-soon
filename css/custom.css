@@ -1,0 +1,113 @@
+/* custom css - everything else, */
+
+.container.hero {
+    padding-bottom: var(--section-padding);
+}
+
+footer.container {
+    padding-top: 0;
+    padding-bottom: calc(var(--section-padding) * 1.5);
+}
+
+    footer.container > .row-short {
+        margin-top: var(--section-padding);
+    }
+    
+    .bg-main-color {
+        background-color: var(--main-color);
+    }
+
+    .hero {
+        text-align: center;
+        margin-bottom: var(--hero-space);
+
+    }
+
+    .hero img {
+        height : 40px;
+        margin-bottom: var((--hero-space) * 2);
+    }
+
+    .hero h1 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var((--hero-space) * 2);
+        text-transform: uppercase;
+        font-size: 50px;
+        color: black;
+    }
+
+    .hero p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--hero-space);
+        font-size: 18px;
+        color: #555;
+    }
+    .hero .clock {
+        margin-bottom: clac(var(--hero-space)*2);
+    }
+
+    .hero.form {
+        margin-bottom: var(--hero-space);
+    }
+    /*maincontent*/
+    main h2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        color: #000000
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    main p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000 /*needs correction*/
+    }
+
+    /* footer */
+
+    footer {
+        text-align: center;
+        line-height: 32px;
+        font-size: 17px;
+        color: #fff8
+    }
+    footer > .row {
+        border-bottom: 1px solid white;
+    }
+    footer > .text-trio {
+        display: inline-block;
+    }
+            footer > .text-trio > .text {
+                display: inline-block;
+                padding: 0 10px;
+            }
+                footer > .text-trio > .text::before {
+                    display: inline-block;
+                    content: '';
+                    width: 2px;
+                    height: 20px;
+                    background-color: whitesmoke;
+                
+                }
+
+                footer > .text-trio > .text:first-of-type::before {
+                    display: none;
+                }
+            footer > .text-trio {
+        display: inline-block;
+    }
+    footer p {
+        display: inline-block;
+        width: 100%;
+    }
+    footer a {
+color: #ffff
+
+    }
+
