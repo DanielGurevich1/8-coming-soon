@@ -2,6 +2,9 @@
 
 .container.hero {
     padding-bottom: var(--section-padding);
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 footer.container {
@@ -80,6 +83,20 @@ footer.container {
     footer > .row {
         border-bottom: 1px solid white;
     }
+    footer .fa {
+        display: inline-block;
+        width: 40px;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+        footer .fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
     footer > .text-trio {
         display: inline-block;
     }
