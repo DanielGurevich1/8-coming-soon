@@ -1,13 +1,17 @@
 .container {
 
+
     display: grid;
     grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
+    display: inline-block;
+
     width: 100%;
     padding: calc(var(--section-padding) * 2) 0;
 }
     .container > .row-short {
         display: inline-block;
         width: 600px;
+
         grid-column: 3 / 5;
 
     }
@@ -15,8 +19,8 @@
     .container > .row {
         display: inline-block;
         width: 1000px;
-        grid-column: 2 / 6;
 
+        grid-column: 2 / 6;
 
     background-color: aquamarine;
     }
@@ -29,14 +33,23 @@
             .container > .row > .left.column {
                 display: inline-block;
                 width: 50%;
+
             }
             .container > .row > .right.column {
                 width: 40%;
                 margin-left: 10%;
+                float: left;
+            }
+            .container > .row > .right.column {
+                display: inline-block;
+                width: 50%;
+                float: right;
+
             }
 
 @media (max-width: 1100px){
     .container > .row {
+
         grid-template-columns: 1fr 100px 300px 300px 100px 1fr;
         background-color: aquamarine;
 
@@ -69,3 +82,56 @@
                 margin-top: calc(var(--section-padding)*2);
             }
         }
+
+
+        width: 800px;
+        margin: 0  calc(50% - 400px);
+
+
+    background-color: aquamarine;
+
+}
+@media (max-width: 900px){
+    .container > .row {
+
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+    background-color: orange;
+    }
+
+@media (max-width: 600px){
+    .container > .row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+        background-color:red;
+    }
+    @media (max-width: 500px) {
+        .container {
+        padding-left: 20px;
+        padding-right: 20 px;
+        }
+        .container > .row {
+                width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        background-color: greenyellow;
+        }
+        .container > .row-short {
+            width: 100%;
+            margin: 0;
+        }  
+            .container > .row > .left.column {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 20px;
+            }
+            .container > .row > .right.column {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+

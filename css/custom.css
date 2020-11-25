@@ -2,9 +2,11 @@
 
 .container.hero {
     padding-bottom: var(--section-padding);
+
     background-image: url(../img/hero-image.jpg);
     background-size: cover;
     min-height: 100vh;
+
 }
 
 footer.container {
@@ -47,6 +49,7 @@ footer.container {
         font-size: 18px;
         color: #555;
     }
+
     .hero .clock {
         margin-bottom: clac(var(--hero-space)*2);
     }
@@ -141,3 +144,4 @@ footer.container {
         display: none;
     }
 }
+
