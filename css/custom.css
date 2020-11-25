@@ -2,11 +2,11 @@
 
 .container.hero {
     padding-bottom: var(--section-padding);
-
-    background-image: url(../img/hero-image.jpg);
+    background-image: url(../img/hero-image-dg.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
-
 }
 
 footer.container {
@@ -25,29 +25,28 @@ footer.container {
     .hero {
         text-align: center;
         margin-bottom: var(--hero-space);
-
     }
 
     .hero img {
-        height : 40px;
-        margin-bottom: var((--hero-space) * 2);
+        height: 40px;
+        margin-bottom: calc(var(--hero-space) * 2);
     }
 
     .hero h1 {
         display: inline-block;
         width: 100%;
-        margin-bottom: var((--hero-space) * 2);
+        margin-bottom: var(--hero-space);
         text-transform: uppercase;
-        font-size: 50px;
-        color: black;
+        font-size: 100px;
+        color: red
     }
 
     .hero p {
         display: inline-block;
         width: 100%;
-        margin-bottom: var(--hero-space);
+        margin-bottom: calc(var(--hero-space) * 3);
         font-size: 18px;
-        color: #555;
+        color: var(--grey-color);
     }
 
     .hero .clock {
@@ -55,8 +54,23 @@ footer.container {
     }
 
     .hero.form {
+        width: 90%;
         margin-bottom: var(--hero-space);
     }
+            .hero.form > input {
+                width: 100%;
+                color: #fff;
+                background-color: transparent;
+                border-bottom-color: #fff;
+            }
+
+            .hero.form > input::placeholder {
+                color: #fff;
+            }
+            .hero.form > .btn {
+                float: none;
+            }
+
     /*maincontent*/
     main h2 {
         display: inline-block;
@@ -72,9 +86,15 @@ footer.container {
         margin-bottom: var(--main-space);
         font-size: 18px;
         line-height: 26px;
-        color: #000000 /*needs correction*/
-    }
-
+        color: var(--grey-color);
+        }
+        main p > a {
+            color: var(--secondary-color);
+            text-decoration-line: none;
+        }
+        main.form > .btn {
+            float: right;
+        }
     /* footer */
 
     footer {
@@ -83,7 +103,12 @@ footer.container {
         font-size: 17px;
         color: #fff8
     }
-    footer > .row {
+    footer.container > .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 30px;
         border-bottom: 1px solid white;
     }
     footer .fa {
@@ -102,21 +127,24 @@ footer.container {
         }
     footer > .text-trio {
         display: inline-block;
+        width: 100%;
     }
             footer > .text-trio > .text {
                 display: inline-block;
                 padding: 0 10px;
+                position: relative;
             }
                 footer > .text-trio > .text::before {
                     display: inline-block;
                     content: '';
-                    width: 2px;
-                    height: 20px;
+                    width: 1px;
+                    height: 14px;
                     background-color: whitesmoke;
                     position: absolute;
+                    top: 50%;
+                    left: -2px;
+                    transform: translateY(-50%);
 
-
-                
                 }
 
                 footer > .text-trio > .text:first-of-type::before {
