@@ -2,6 +2,11 @@
 
 .container.hero {
     padding-bottom: var(--section-padding);
+
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
 }
 
 footer.container {
@@ -44,3 +49,99 @@ footer.container {
         font-size: 18px;
         color: #555;
     }
+
+    .hero .clock {
+        margin-bottom: clac(var(--hero-space)*2);
+    }
+
+    .hero.form {
+        margin-bottom: var(--hero-space);
+    }
+    /*maincontent*/
+    main h2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        color: #000000;
+        font: 21px;
+        text-transform: uppercase;
+    }
+    main p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000 /*needs correction*/
+    }
+
+    /* footer */
+
+    footer {
+        text-align: center;
+        line-height: 32px;
+        font-size: 17px;
+        color: #fff8
+    }
+    footer > .row {
+        border-bottom: 1px solid white;
+    }
+    footer .fa {
+        display: inline-block;
+        width: 40px;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+        footer .fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+    footer > .text-trio {
+        display: inline-block;
+    }
+            footer > .text-trio > .text {
+                display: inline-block;
+                padding: 0 10px;
+            }
+                footer > .text-trio > .text::before {
+                    display: inline-block;
+                    content: '';
+                    width: 2px;
+                    height: 20px;
+                    background-color: whitesmoke;
+                    position: absolute;
+
+
+                
+                }
+
+                footer > .text-trio > .text:first-of-type::before {
+                    display: none;
+                }
+            footer > .text-trio {
+        display: inline-block;
+    }
+    footer p {
+        display: inline-block;
+        width: 100%;
+    }
+    footer a {
+        color: #ffff;
+        text-decoration: none;
+
+    }
+
+    @media (max-width: 700px ) {
+        footer > .text-trio > .text {
+            display: inline-block;
+            padding: 0;
+    }
+    footer > .text-trio > .text::before {
+        display: none;
+    }
+}
+
