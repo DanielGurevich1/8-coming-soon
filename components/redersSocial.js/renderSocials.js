@@ -1,4 +1,11 @@
-function renderSocials (data) {
+/**
+ * @param {String} selector Selektorius, kaip rasti norima VideoPlaybackQuality, 
+ * @param {Array} data Duomenu masyvas su objektais, kurie reprezentioja social nuorodas
+ */
+
+* 
+
+function renderSocials(data) {
     // input validation
     
     

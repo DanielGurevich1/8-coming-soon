@@ -12,3 +12,5 @@ const inputDOM = document.querySelectorAll('main .form > input')
 
 console.log(h1DOM);
 console.log(inputDOM);
+
+render

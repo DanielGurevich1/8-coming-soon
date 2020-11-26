@@ -1,6 +1,4 @@
 .container {
-
-
     display: grid;
     grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     display: inline-block;
@@ -19,15 +17,15 @@
     .container > .row {
         display: inline-block;
         width: 1000px;
-
-        grid-column: 2 / 6;
+        
+        grid-column: 3 / 6;
 
     background-color: aquamarine;
     }
 
         .container > .row > .column {
             display: inline-block;
-            float: left;
+            /* float: left; */
         }
         
             .container > .row > .left.column {
@@ -42,7 +40,7 @@
             }
             .container > .row > .right.column {
                 display: inline-block;
-                width: 50%;
+                /* width: 50%; */
                 float: right;
 
             }
