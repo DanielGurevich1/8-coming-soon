@@ -1,5 +1,6 @@
 import { renderSocials }  from "./components/renderSocials.js";
 import { renderSocials }  from "./data/socialsData.js";
+import { renderClock } from "components/clock/renderClock.js"
 
 <p>
 
