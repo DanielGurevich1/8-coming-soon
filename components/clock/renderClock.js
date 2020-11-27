@@ -37,18 +37,16 @@ const seconds = Math.floor(secondsleft - minutes * 60);
     const HTML = `<div class="time-box">
                         <div>432</div>
                         <span>Days</span>
-                        </div>
-                        <div>
-                        <h2>39</h2>
+                        
+                        <div>39</div>
                         <span>Hours</span>
-                        </div>
-                        <div>
-                        <h2>333</h2>
+                        
+                        <div>333</div>
                         <span>minutes</span>
-                        </div> 
+                         
+                        <div>111</div>
+                        <span>seconds</span>`
       
-      <h2></h2>
-      <span></span>`
 
       DOM.innerHTML = HTML;
 
