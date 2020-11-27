@@ -2,31 +2,34 @@
     display: inline-block;
     width: 20px;
     height: 30px;
-    border-radius: 15px solid white;
+    border: 3px solid #fff;
+    border-radius: 100px;
 }
 
 .mouse > .wheel {
     display: inline-block;
     width: 3px;
-    height: 2px;
-    border-radius: 8px;
+    height: 6px;
+    border-radius: 2px;
     background-color: white;
     margin-top: 50px;
     animation-name: peliukas;
-    animation-duration: 2s;
+    animation-duration: 0.85s;
     animation-iteration-count: infinite;
 }
-
+        .mouse > .wheel:hover {
+            animation-play-state: paused;
+        }
 @keyframes peliukas {
     0% {
-        margin-top: 50px;
+        margin-top: 5px;
         background-color: #ffff;
     }
     50% {
         background-color: #ffff;
     }
     100% {
-        margin-top: 220px;
+        margin-top: 20px;
         background-color: #fff0;
     }
 }

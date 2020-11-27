@@ -19,38 +19,43 @@ const currentYear = date.getFullTear();
 const newYear = currentYear + 1;
 
 const newYearDate = `${newYear}-01-01 00:00:00`;
+const newYearObject = new Date(newYearDate);
+const newYearMiliseconds = newYearObject.getTime();
 
-const newYearMilliseconds = date.getTime();
+//einamasis laikas
+const currentTimeMilliseconds = date.getTime();
 
-const timeLeft = newYearMilliseconds - currentTimeMilliseconds;
+const timeLeft = newYearMiliseconds - currentTimeMilliseconds;
+let secondsLeft = timeLeft /1000;
 
-console.log(newYearDate);
+// console.log(newYearDate);
 
-const days = Math.floor(secondsLeft /60/60/24);
+const days = Math.floor(secondsLeft / 60 / 60 / 24);
 secondsLeft -= days * 60 * 60 * 24;
-const hours = Math.floor(secondsLeft /60/60);
-secondsLeft -= days * 60 * 60;
+const hours = Math.floor(secondsLeft / 60 / 60);
+secondsLeft -= hours * 60 * 60;
+
 const minutes = Math.floor(secondsLeft /60);
-secondsLeft -= days * 60;
+
 const seconds = Math.floor(secondsleft - minutes * 60);
 
     const HTML = `<div class="time-box">
-                        <div>432</div>
+                        <div class='time'>${days}</div>
                         <span>Days</span>
-                        
-                        <div>39</div>
+                        </div>
+                        <div class="time">${hours}</div>
                         <span>Hours</span>
-                        
-                        <div>333</div>
+                        </div>
+                        <div class="time">${minutes}</div>
                         <span>minutes</span>
-                         
-                        <div>111</div>
-                        <span>seconds</span>`
-      
+                        </div>
+                        <div class="time">${seconds}</div>
+                        <span>seconds</span>
+                        </div>`;
 
       DOM.innerHTML = HTML;
-
-    console.log(DOM);
+return true;
+    // console.log(DOM);
 }
 
 

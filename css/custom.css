@@ -4,7 +4,7 @@
     padding-bottom: var(--section-padding);
     background-image: url(../img/hero-image-dg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -115,11 +115,12 @@ footer.container {
         display: inline-block;
         width: 40px;
         padding: 10px;
-        line-height: 20px;
+        line-height: 60px;
         color: #fff;
         text-align: center;
         border-radius: 50%;
         transition: all 0.5s;
+        background-color: blue;
     }
         footer .fa:hover {
             background-color: #fff;

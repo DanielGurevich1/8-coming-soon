@@ -1,6 +1,7 @@
 .hero .clock {
     display: inline-block;
     width: 100%;
+    background-color: red;
 }
     .clock .time-box {
         display: inline-block;
