@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 footer.container {
@@ -51,6 +51,7 @@ footer.container {
 
     .hero .clock {
         margin-bottom: clac(var(--hero-space)*2);
+        background-color: yellow;
     }
 
     .hero.form {
@@ -69,7 +70,9 @@ footer.container {
             }
             .hero.form > .btn {
                 float: none;
+                border: 2px solid red;
             }
+      
 
     /*maincontent*/
     main h2 {
@@ -124,6 +127,10 @@ footer.container {
     }
         footer .fa:hover {
             background-color: #fff;
+            color: var(--main-color);
+        }
+        footer .btn .fa:hover {
+            background-color: inherit;
             color: var(--main-color);
         }
     footer > .text-trio {

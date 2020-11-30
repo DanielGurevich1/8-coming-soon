@@ -14,3 +14,7 @@
 .btn:hover {
     box-shadow: 0 4px 10px #000a; ;
 }
+.btn.circle {
+    width: 40px;
+    border-radius: 50%;
+}
